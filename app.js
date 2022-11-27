@@ -30,5 +30,3 @@ app.use(blogRoutes);
 app.use((req, res) => {
   res.status(404).render("404", { title: "Page not found" });
 });
-
-console.log(process.env.MONGOURI);
