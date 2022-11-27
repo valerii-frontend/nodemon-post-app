@@ -2,16 +2,14 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const { render } = require("ejs");
-// require("dotenv").config();
+require("dotenv").config();
 
 const blogRoutes = require("./routes/blogRoutes.js");
 
 // express app
 const app = express();
 // connect to mongo DB
-// const dbURI = process.env.MONGOURI;
-const dbURI =
-  "mongodb+srv://valerii:zQBUJg0wwjdl3bRl@node-js-testing.8xjvnkn.mongodb.net/my-node?retryWrites=true&w=majority";
+const dbURI = process.env.MONGOURI;
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
