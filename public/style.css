@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 10px;
+  font-family: monospace;
+  color: #333;
+}
+main {
+  flex: 1 1 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+main ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+main ul li {
+  flex: 0 0 calc(50% - 0.5rem);
+}
+main a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid silver;
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+main a:hover {
+  background-color: lightslategrey;
+  transform: scale(1.03);
+}
+main a:hover p,
+main a:hover h3 {
+  color: white;
+}
+footer {
+  flex: 0 1 auto;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid silver;
+  color: silver;
+}
+nav h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+nav {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid silver;
+  color: silver;
+}
+nav a:hover {
+  color: crimson;
+}
+li a {
+  font-size: 1.25rem;
+  height: 100%;
+}
+li h3 {
+  text-transform: uppercase;
+}
+li p {
+  color: grey;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  gap: 3rem;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid silver;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form p {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.form p label {
+  flex: 0 0 25%;
+  margin-right: 10px;
+}
+.form p input {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 40px;
+}
+.form h2 {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+.form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: crimson;
+  color: white;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.form button:hover {
+  background-color: rgb(171, 0, 34);
+  cursor: pointer;
+}
+.form button:active {
+  position: relative;
+  top: 3px;
+}
+.about p {
+  margin-bottom: 2rem;
+}
+.details button {
+  font-size: 1.25rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  background-color: orangered;
+  color: white;
+  margin-top: 2rem;
+}
+.details button:hover {
+  background-color: rgb(194, 0, 0);
+  cursor: pointer;
+}
+.details button:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+.details p {
+  line-height: 150%;
+  font-size: 1.1rem;
+  border-left: 5px solid lightseagreen;
+  padding-left: 2rem;
+}
+.details *::selection {
+  background-color: lightseagreen;
+}
+.textarea {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 200px;
+}
