@@ -1,10 +1,9 @@
 {
-  "name": "express",
+  "name": "nodemon-node-js-post-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Just test application, node js, MVC",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon start app.js"
   },
   "author": "",
