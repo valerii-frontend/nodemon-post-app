@@ -9,9 +9,11 @@ const blogRoutes = require("./routes/blogRoutes.js");
 // express app
 const app = express();
 // connect to mongo DB
-const dbURI = process.env.MONGOURI;
+// const dbURI = process.env.MONGOURI;
+const dbURI =
+  "mongodb+srv://valerii:zQBUJg0wwjdl3bRl@node-js-testing.8xjvnkn.mongodb.net/my-node?retryWrites=true&w=majority";
 const port = process.env.PORT || 5001;
-console.log(dbURI);
+
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(port))
