@@ -10,10 +10,10 @@ const blogRoutes = require("./routes/blogRoutes.js");
 const app = express();
 // connect to mongo DB
 const dbURI = process.env.MONGOURI;
-
+const port = process.env.PORT || 5001;
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(5000))
+  .then((result) => app.listen(port))
   .catch((err) => console.log(err));
 
 // register view engine
